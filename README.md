@@ -13,7 +13,6 @@ export AWS_DEFAULT_REGION=us-east-1
 aws sts get-caller-identity
 
 
-================================================================
 PARTE 2 — CRIACAO DOS RECURSOS AWS (feito uma unica vez)
 
 
@@ -184,9 +183,9 @@ ollama run llama3.2:1b "O que é MapReduce? Responda em uma frase."
 exit
 
 
-================================================================
+======================================
 PARTE 4 — CRIACAO DO CODIGO DO PROJETO
-================================================================
+======================================
 
 # Criar estrutura de diretorios
 mkdir -p ~/pipeline/{prompts,src}
@@ -372,9 +371,9 @@ aws s3 ls s3://pdfs-output-lab-paulo/results/
 aws s3 ls s3://pdfs-input-lab-paulo/
 
 
-================================================================
+====================================
 PARTE 7 — RECRIACAO DE RECURSOS (se o lab resetar tudo)
-================================================================
+====================================
 
 # Verificar o que ainda existe
 echo "=== S3 ===" && aws s3 ls
@@ -410,9 +409,9 @@ aws ec2 run-instances \
   --count 1
 
 
-================================================================
+===================================
 RECURSOS CRIADOS — REFERENCIA RAPIDA
-================================================================
+===================================
 
 Conta AWS:       609331005234
 Regiao:          us-east-1
@@ -430,9 +429,9 @@ Modelo LLM:      llama3.2:1b via Ollama
 CloudWatch NS:   PipelineAnalise
 
 
-================================================================
+============================
 RESULTADOS OBTIDOS NOS TESTES
-================================================================
+============================
 
 Teste 1 — texto de exemplo (texto_exemplo.txt):
   doc_id: 4404e1e1-b208-43d7-8524-130e1a585e86
