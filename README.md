@@ -1,10 +1,8 @@
 TODOS OS COMANDOS USADOS NO PROJETO — DO INICIO AO FIM
 Pipeline Distribuido de Analise de Documentos
 
+PARTE 1 — CONFIGURACAO DE CREDENCIAIS
 
-================================================================
-PARTE 1 — CONFIGURACAO DE CREDENCIAIS (repetir a cada sessao)
-================================================================
 
 export AWS_ACCESS_KEY_ID=COLE_AQUI
 export AWS_SECRET_ACCESS_KEY=COLE_AQUI
@@ -17,7 +15,7 @@ aws sts get-caller-identity
 
 ================================================================
 PARTE 2 — CRIACAO DOS RECURSOS AWS (feito uma unica vez)
-================================================================
+
 
 --- S3: Buckets de entrada e saida ---
 
@@ -164,9 +162,8 @@ aws ec2 describe-instances \
   --output table
 
 
-================================================================
 PARTE 3 — INSTALACAO DO OLLAMA NAS INSTANCIAS EC2
-================================================================
+===========================================
 
 # SSH na instancia (repetir para Worker 1 e Worker 2)
 ssh -i /tmp/lab-key.pem -o StrictHostKeyChecking=no ec2-user@IP_WORKER
